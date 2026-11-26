@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+parts/__init__.py
+parts/example_bracket.py
+src/cad_lib/__init__.py
+src/cad_lib/tolerances.py
+src/cad_lib.egg-info/PKG-INFO
+src/cad_lib.egg-info/SOURCES.txt
+src/cad_lib.egg-info/dependency_links.txt
+src/cad_lib.egg-info/requires.txt
+src/cad_lib.egg-info/top_level.txt
+tests/test_geometry.py

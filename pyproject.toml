@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cad-lib"
+version = "0.1.0"
+description = "Parametric CAD parts built with build123d"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "build123d",
+    "build123d-mcp",
+    "ocp_vscode",
+    "jupyterlab",
+    "jupyter-cadquery",
+    "pytest",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src", "parts" = "parts"}
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["cad_lib*", "parts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

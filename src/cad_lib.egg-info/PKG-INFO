@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: cad-lib
+Version: 0.1.0
+Summary: Parametric CAD parts built with build123d
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: build123d
+Requires-Dist: build123d-mcp
+Requires-Dist: ocp_vscode
+Requires-Dist: jupyterlab
+Requires-Dist: jupyter-cadquery
+Requires-Dist: pytest
+
+# cad-lib
+
+Parametric CAD parts built with `build123d`.
+
+Create a local environment and install the project in editable mode:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -e .
+```
+
+Run the geometry tests with `.venv/bin/python -m pytest`. Execute
+`parts/example_bracket.py` from the repository root to generate STEP and STL
+files in `exports/`.

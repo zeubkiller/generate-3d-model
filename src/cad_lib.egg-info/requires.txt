@@ -1,0 +1,6 @@
+build123d
+build123d-mcp
+ocp_vscode
+jupyterlab
+jupyter-cadquery
+pytest
